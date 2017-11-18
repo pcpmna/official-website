@@ -17,8 +17,12 @@
     </head>
 
     <body ng-app="app" ng-controller="appController">
-        <div class="col-xs-12 full-screen-height">
-            <div class="col-xs-12 text-center height-70 v-center h-center">
+        <div class="header" ng-if="header.show">
+            <span class="header-logo"></span>
+            <span class="header-brand-name"></span>
+        </div>
+        <div class="col-xs-12 full-screen-height home_section" id="home">
+            <div class="col-xs-12 text-center height-70 v-center h-center" id="home_logo">
                 <span class="full-logo"></span>
             </div>
             <div class="col-xs-12 height-30 text-center">
@@ -26,11 +30,12 @@
             </div>
         </div>
 
-        <div class="col-xs-12 full-screen-height" style="background-color: grey;">
+        <div class="col-xs-12 full-screen-height" id="contracting"
+             style="background-color: grey;">
             <div class="col-xs-12 text-center height-60 v-center">
                 <h2>
                     <span class="title-text">
-                        Title Name
+                        GENERAL CONTRACTING
                     </span>
                 </h2>
             </div>
@@ -39,7 +44,75 @@
             </div>
         </div>
 
-        <!-- <div class="col-xs-12 full-screen-height" style="background-color:green"></div> -->
+        <div class="col-xs-12 full-screen-height" id="cost-planning"
+             style="background-color: burlywood;">
+            <div class="col-xs-12 text-center height-60 v-center">
+                <h2>
+                    <span class="title-text">
+                        COST PLANNING
+                    </span>
+                </h2>
+            </div>
+            <div class="col-xs-12 height-40 text-center">
+                <h4>Some other things here</h4>
+            </div>
+        </div>
+
+        <div class="col-xs-12 full-screen-height" id="design-build"
+             style="background-color: grey;">
+            <div class="col-xs-12 text-center height-60 v-center">
+                <h2>
+                    <span class="title-text">
+                        DESIGN & BUILD
+                    </span>
+                </h2>
+            </div>
+            <div class="col-xs-12 height-40 text-center">
+                <h4>Some other things here</h4>
+            </div>
+        </div>
+
+        <div class="col-xs-12 full-screen-height" id="interior-designing"
+             style="background-color: burlywood;">
+            <div class="col-xs-12 text-center height-60 v-center">
+                <h2>
+                    <span class="title-text">
+                        INTERIOR DESIGNING
+                    </span>
+                </h2>
+            </div>
+            <div class="col-xs-12 height-40 text-center">
+                <h4>Some other things here</h4>
+            </div>
+        </div>
+
+        <div class="col-xs-12 full-screen-height" id="3d-modelling"
+             style="background-color: grey;">
+            <div class="col-xs-12 text-center height-60 v-center">
+                <h2>
+                    <span class="title-text">
+                        3D MODELLING
+                    </span>
+                </h2>
+            </div>
+            <div class="col-xs-12 height-40 text-center">
+                <h4>Some other things here</h4>
+            </div>
+        </div>
+
+        <div class="col-xs-12 full-screen-height" id="fabrication"
+             style="background-color: burlywood;">
+            <div class="col-xs-12 text-center height-60 v-center">
+                <h2>
+                    <span class="title-text">
+                        FABRICATION
+                    </span>
+                </h2>
+            </div>
+            <div class="col-xs-12 height-40 text-center">
+                <h4>Some other things here</h4>
+            </div>
+        </div>
 
         <script src="lib/jquery-3.2.1.min.js"></script>
         <script src="lib/angular.min.js"></script>

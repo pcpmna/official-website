@@ -1,12 +1,42 @@
 body {
-    font-family: 'Montserrat', sans-serif ;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    background-color: #fff;
-    color: #474f58;
+    color: #fff;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
-    display: none;  // Safari and Chrome
+    /*display: none;  // Safari and Chrome*/
+}
+
+.header {
+    height: 70px;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: #0c0e0e 0px 0px 15px 0px;
+}
+
+.header-logo {
+    margin: 10px 0 10px 20px;
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/logo.png);
+    display: inline-block;
+    background-size: 68%;
+    background-repeat: no-repeat;
+}
+
+.header-brand-name {
+    margin: 25px 0 10px;
+    height: 35px;
+    width: 500px;
+    background-image: url(../images/name.png);
+    display: inline-block;
+    background-size: 60%;
+    background-repeat: no-repeat;
 }
 
 .full-screen-height{
@@ -40,11 +70,10 @@ body::-webkit-scrollbar {
 }
 
 .full-logo {
-    background-size: 195%;
+    background-size: 100%;
     height: 242px;
     width: 400px;
-    background-image: url(../images/logo.jpg);
-    background-position: -198px -250px;
+    background-image: url(../images/logo_full.png);
     background-repeat: no-repeat;
 }
 
@@ -72,4 +101,9 @@ body::-webkit-scrollbar {
     top: 44%;
     left: 100%;
     margin-left: 10px;
+}
+
+.home_section {
+    color: #474f58;
+    background-color: #fff;
 }

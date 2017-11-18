@@ -1,5 +1,13 @@
 'use strict';
 
 app.constant('constants', {
-    introMessage: 'Pulikkal Construction offical website coming here soon.'
+    pageIds: [
+        'home',
+        'contracting',
+        'cost-planning',
+        'design-build',
+        'interior-designing',
+        '3d-modelling',
+        'fabrication'
+    ]
 });
