@@ -1,16 +1,50 @@
 body {
-    font-family: 'Montserrat', sans-serif ;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    background-color: #fff;
-    color: #474f58;
+    color: #fff;
+    overflow-x: hidden;
+    /*scroll-behavior: smooth;*/
 }
 
 body::-webkit-scrollbar {
-    display: none;  // Safari and Chrome
+    /*display: none;  // Safari and Chrome*/
+}
+
+.header {
+    height: 70px;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: #0c0e0e 0px 0px 15px 0px;
+}
+
+.header-logo {
+    margin: 10px 0 10px 20px;
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/logo.png);
+    display: inline-block;
+    background-size: 68%;
+    background-repeat: no-repeat;
+}
+
+.header-brand-name {
+    margin: 25px 0 10px;
+    height: 35px;
+    width: 500px;
+    background-image: url(../images/name.png);
+    display: inline-block;
+    background-size: 60%;
+    background-repeat: no-repeat;
 }
 
 .full-screen-height{
     height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .height-30 {
@@ -40,11 +74,10 @@ body::-webkit-scrollbar {
 }
 
 .full-logo {
-    background-size: 195%;
+    background-size: 100%;
     height: 242px;
     width: 400px;
-    background-image: url(../images/logo.jpg);
-    background-position: -198px -250px;
+    background-image: url(../images/logo_full.png);
     background-repeat: no-repeat;
 }
 
@@ -55,7 +88,7 @@ body::-webkit-scrollbar {
 .title-text::after {
     width: 40px;
     height: 3px;
-    background: #000;
+    background: #fff;
     content: "";
     position: absolute;
     top: 44%;
@@ -66,10 +99,115 @@ body::-webkit-scrollbar {
 .title-text::before {
     width: 40px;
     height: 3px;
-    background: #000;
+    background: #fff;
     content: "";
     position: absolute;
     top: 44%;
     left: 100%;
     margin-left: 10px;
+}
+
+.home_section {
+    color: #474f58;
+    background-color: #fff;
+}
+
+.contracting_section {
+    background-image: url(../images/contracts.jpg);
+    background-blend-mode: multiply;
+}
+
+.cost-planning_section {
+    background-image: url(../images/cost-estimation.jpg);
+    background-blend-mode: multiply;
+}
+
+.build_section {
+    background-image: url(../images/design.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+}
+
+.interior-designing_section {
+    background-image: url(../images/interior-design.jpg);
+    background-blend-mode: multiply;
+}
+
+.modelling_section {
+    background-image: url(../images/3d-model.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+}
+
+.fabrication_section {
+    background-image: url(../images/fabrication.jpeg);
+    background-blend-mode: multiply;
+    background-position: bottom;
+}
+
+.contacts {
+    background-color: #152113;
+    height: 220px;
+}
+
+.contacts h4 {
+    padding: 15px 0;
+}
+
+.contacts_address {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-right: solid 2px #fff;
+}
+
+.contacts_details {
+    padding-top: 20px;
+}
+
+.footer-logo {
+    margin: 10px 0 10px 20px;
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/logo.png);
+    display: inline-block;
+    background-size: 68%;
+    background-repeat: no-repeat;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.whatsapp-icon {
+    height: 20px;
+    width: 25px;
+    background-image: url(../images/whatsapp.png);
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    vertical-align: sub;
+}
+
+.phone-icon {
+    height: 22px;
+    width: 24px;
+    background-image: url(../images/phone-icon.png);
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    vertical-align: sub;
+}
+
+.mail-icon {
+    height: 16px;
+    margin-right: 6px;
+    width: 23px;
+    background-image: url(../images/mail-icon.png);
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    vertical-align: sub;
 }

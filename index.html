@@ -17,8 +17,12 @@
     </head>
 
     <body ng-app="app" ng-controller="appController">
-        <div class="col-xs-12 full-screen-height">
-            <div class="col-xs-12 text-center height-70 v-center h-center">
+        <div class="header" ng-if="header.show">
+            <span class="header-logo"></span>
+            <span class="header-brand-name"></span>
+        </div>
+        <div class="col-xs-12 full-screen-height home_section" id="home">
+            <div class="col-xs-12 text-center height-70 v-center h-center" id="home_logo">
                 <span class="full-logo"></span>
             </div>
             <div class="col-xs-12 height-30 text-center">
@@ -26,20 +30,110 @@
             </div>
         </div>
 
-        <div class="col-xs-12 full-screen-height" style="background-color: grey;">
+        <div class="col-xs-12 full-screen-height contracting_section" id="contracting"
+             style="background-color: grey;">
             <div class="col-xs-12 text-center height-60 v-center">
                 <h2>
                     <span class="title-text">
-                        Title Name
+                        GENERAL CONTRACTING
                     </span>
                 </h2>
             </div>
             <div class="col-xs-12 height-40 text-center">
-                <h4>Some other things here</h4>
+                <h4>Confused and worried about your construction?
+                    Just sign a contract with us, we will take care of the complete construction.
+                    You just sit back and relax.
+                </h4>
             </div>
         </div>
 
-        <!-- <div class="col-xs-12 full-screen-height" style="background-color:green"></div> -->
+        <div class="col-xs-12 full-screen-height cost-planning_section" id="cost-planning"
+             style="background-color: grey;">
+            <div class="col-xs-12 text-center height-60 v-center">
+                <h2>
+                    <span class="title-text">
+                        COST PLANNING
+                    </span>
+                </h2>
+            </div>
+            <div class="col-xs-12 height-40 text-center">
+                <h4>Our expert will estimates and plan your project, so that your
+                    dream will fit in your budget.
+                </h4>
+            </div>
+        </div>
+
+        <div class="col-xs-12 full-screen-height build_section" id="design-build"
+             style="background-color: grey;">
+            <div class="col-xs-12 text-center height-60 v-center">
+                <h2>
+                    <span class="title-text">
+                        DESIGN & BUILD
+                    </span>
+                </h2>
+            </div>
+            <div class="col-xs-12 height-40 text-center">
+                <h4>From the Blue-print to your Dream.</h4>
+            </div>
+        </div>
+
+        <div class="col-xs-12 full-screen-height interior-designing_section" id="interior-designing"
+             style="background-color: darkgrey;">
+            <div class="col-xs-12 text-center height-60 v-center">
+                <h2>
+                    <span class="title-text">
+                        INTERIOR DESIGNING
+                    </span>
+                </h2>
+            </div>
+            <div class="col-xs-12 height-40 text-center">
+                <h4>Add colours to your dream with our Interior designing ideas.</h4>
+            </div>
+        </div>
+
+        <div class="col-xs-12 full-screen-height modelling_section" id="modelling"
+             style="background-color: grey;">
+            <div class="col-xs-12 text-center height-60 v-center">
+                <h2>
+                    <span class="title-text">
+                        3D MODELLING
+                    </span>
+                </h2>
+            </div>
+            <div class="col-xs-12 height-40 text-center">
+                <h4>Have a tour in your dream project even before we build it.</h4>
+            </div>
+        </div>
+
+        <div class="col-xs-12 full-screen-height fabrication_section" id="fabrication"
+             style="background-color: grey;">
+            <div class="col-xs-12 text-center height-60 v-center">
+                <h2>
+                    <span class="title-text">
+                        FABRICATION
+                    </span>
+                </h2>
+            </div>
+            <div class="col-xs-12 height-40 text-center">
+                <h4>You do'nt have to worry about your decorations, we got the best team to do it.</h4>
+            </div>
+        </div>
+
+        <div class="col-xs-12 contacts">
+            <h4 class="col-xs-12 text-center">Contact Us</h4>
+            <div class="row">
+                <div class="col-sm-6 text-center contacts_address">
+                    <p>Near EMS Hospital, Panambi</p>
+                    <p>Perintalmanna</p>
+                    <p>Malappuram DT - 679322</p>
+                </div>
+                <div class="col-sm-6 text-center contacts_details">
+                    <p><span class="whatsapp-icon"></span>+91-7034 349474</p>
+                    <p><span class="phone-icon"></span>+91-7356 223344</p>
+                    <p><span class="mail-icon"></span>pcpmna77@gmail.com</p>
+                </div>
+            </div>
+        </div>
 
         <script src="lib/jquery-3.2.1.min.js"></script>
         <script src="lib/angular.min.js"></script>
