@@ -2,7 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #fff;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
 }
 
 body::-webkit-scrollbar {
@@ -41,6 +41,9 @@ body::-webkit-scrollbar {
 
 .full-screen-height{
     height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .height-30 {
@@ -84,7 +87,7 @@ body::-webkit-scrollbar {
 .title-text::after {
     width: 40px;
     height: 3px;
-    background: #000;
+    background: #fff;
     content: "";
     position: absolute;
     top: 44%;
@@ -95,7 +98,7 @@ body::-webkit-scrollbar {
 .title-text::before {
     width: 40px;
     height: 3px;
-    background: #000;
+    background: #fff;
     content: "";
     position: absolute;
     top: 44%;
@@ -106,4 +109,104 @@ body::-webkit-scrollbar {
 .home_section {
     color: #474f58;
     background-color: #fff;
+}
+
+.contracting_section {
+    background-image: url(../images/contracts.jpg);
+    background-blend-mode: multiply;
+}
+
+.cost-planning_section {
+    background-image: url(../images/cost-estimation.jpg);
+    background-blend-mode: multiply;
+}
+
+.build_section {
+    background-image: url(../images/design.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+}
+
+.interior-designing_section {
+    background-image: url(../images/interior-design.jpg);
+    background-blend-mode: multiply;
+}
+
+.modelling_section {
+    background-image: url(../images/3d-model.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+}
+
+.fabrication_section {
+    background-image: url(../images/fabrication.jpeg);
+    background-blend-mode: multiply;
+    background-position: bottom;
+}
+
+.contacts {
+    background-color: #152113;
+    height: 220px;
+}
+
+.contacts h4 {
+    padding: 15px 0;
+}
+
+.contacts_address {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-right: solid 2px #fff;
+}
+
+.contacts_details {
+    padding-top: 20px;
+}
+
+.footer-logo {
+    margin: 10px 0 10px 20px;
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/logo.png);
+    display: inline-block;
+    background-size: 68%;
+    background-repeat: no-repeat;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.whatsapp-icon {
+    height: 20px;
+    width: 25px;
+    background-image: url(../images/whatsapp.png);
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    vertical-align: sub;
+}
+
+.phone-icon {
+    height: 22px;
+    width: 24px;
+    background-image: url(../images/phone-icon.png);
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    vertical-align: sub;
+}
+
+.mail-icon {
+    height: 16px;
+    margin-right: 6px;
+    width: 23px;
+    background-image: url(../images/mail-icon.png);
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    vertical-align: sub;
 }

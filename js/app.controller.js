@@ -6,19 +6,22 @@ function($scope, constants, $anchorScroll) {
     var currentScrollY = window.scrollY;
     var currentIndex = 0; constants.pageIds[0];
     var alreadyScrolled;
-    console.log(currentIndex);
+    var homeBlockHeight = document.getElementById('home_logo').offsetHeight - 5;
+
     $scope.header = {};
-    function setHeader (value) {
-        $scope.header.show = value;
-        $scope.$apply();
-    }
-    window.onscroll = function (e) {
-        var homeBlockHeight = document.getElementById('home_logo').offsetHeight - 5;
+
+    function checkHeader () {
         if (window.scrollY > homeBlockHeight) {
-            setHeader(true);
+            $scope.header.show = true;
         } else {
-            setHeader(false);
+            $scope.header.show = false;
         }
+    }
+    checkHeader();
+    window.onscroll = function (e) {
+        checkHeader();
+        $scope.$apply();
+
         // if(alreadyScrolled) {
         //     alreadyScrolled = false;
         //     return;

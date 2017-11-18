@@ -1,8 +1,8 @@
 'use strict';
 
-$(window).on('load', function() {
-    $(this).impulse();
-});
+// $(window).on('load', function() {
+//     $(this).impulse();
+// });
 
  var app;
 (function () {
