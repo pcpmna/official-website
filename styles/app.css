@@ -2,8 +2,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #fff;
-    overflow-x: hidden;
-    /*scroll-behavior: smooth;*/
+    /*overflow-x: hidden;*/
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -154,7 +154,7 @@ body::-webkit-scrollbar {
 
 .contacts {
     background-color: #152113;
-    padding: 0 15px 25px;
+    padding: 0 15px 5px;
 }
 
 .contacts h4 {
@@ -232,6 +232,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.credits {
+    text-align: right;
+}
+
+.contacts_sign-off {
+    margin-top: 15px;
 }
 
 @media ( max-width :768px) {
@@ -318,5 +326,13 @@ p {
     .scroll-down-icon {
         height: 50px;
         width: 25px;
+    }
+
+    .credits {
+        text-align: left;
+    }
+
+    .contacts_sign-off {
+        margin-top: 0;
     }
 }
