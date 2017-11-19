@@ -243,4 +243,11 @@ p {
         background-image: url(../images/contracts-sm.jpg);
         background-position: center;
     }
+
+    ..full-screen-height{
+        height: 100vh;
+        background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
