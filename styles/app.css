@@ -242,7 +242,7 @@ p {
     .contracting_section {
         background-image: url(../images/contracts-sm.jpg);
         background-position: center;
-        background-blend-mode: normal;
+        /*background-blend-mode: normal;*/
     }
 
     .full-screen-height{
